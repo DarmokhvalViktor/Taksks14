@@ -13,7 +13,7 @@ public class Task4 {
                 .sorted()
                 .collect(Collectors.toList());
     }
-
+////////////////////////////////////////////////////////////////////////
     public static List<String> filterAndSortByLastDigit(int number, List<String> stringList) {
         return stringList.stream()
                 .filter(filterString(number))

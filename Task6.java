@@ -26,6 +26,8 @@ public class Task6 {
             return list.get(0);
         }
     }
+
+    //not related to the task
     private static int factorial(int n) {
         if (n == 1) {
             return 1;

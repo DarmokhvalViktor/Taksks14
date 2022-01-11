@@ -18,7 +18,7 @@ public class Task13 {
                 }).sorted(compareSchools)
                 .collect(Collectors.toList());
     }
-
+//////////////////////////////////
     public static List<YearSchoolStat> getYearSchoolStatList(List<Entrant> nameList, List<Integer> yearList) {
 
         Map<Integer, List<Entrant>> data = nameList.stream().collect(Collectors.groupingBy(Entrant::getYearOfEntering));

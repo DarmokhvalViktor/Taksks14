@@ -8,6 +8,8 @@ import javax.swing.JOptionPane;
 
 public class Task5 {
 
+    //Тут два верхніх - мої методи. Питання, як правильніше - .map(Object::toString) чи  .map(String::valueOf)?
+
     public static List<String> sortedOddNumbers(List<Integer> integerList) {
         return integerList.stream()
                 .filter(i -> i % 2 != 0)
@@ -22,6 +24,8 @@ public class Task5 {
                 .map(String::valueOf) //n -> String.valueOf(n)
                 .collect(Collectors.toList());
     }
+
+    //////////////////////////////////////////////////////////////////////
     public static List<String> getSortedAscOddValues(List<Integer> intList) {
         return intList.stream().filter(Task5::isOdd)
                 .sorted()

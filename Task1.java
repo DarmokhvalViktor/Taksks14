@@ -12,6 +12,7 @@ public class Task1 {
                 .filter(n -> n.charAt(0) == character && n.charAt(n.length()-1) == character && n.length() > 1)
                 .collect(Collectors.toList());
     }
+    //////////////////////////////////////////////////////////////////
 
     public static List<String> filterByFirstAndLastCharacter (char character, List<String> stringList) {
         return stringList.stream()

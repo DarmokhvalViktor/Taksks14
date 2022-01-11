@@ -16,7 +16,7 @@ public class Task10 {
                 .map(n -> String.valueOf(n.charAt(n.length()-1)).toUpperCase())
                 .collect(Collectors.toList());
     }
-
+////////////////////////////////
     public static List<String> getSortedLastLettersInUpperCase(List<String> stringList) {
         return stringList.stream().collect(Collectors.toMap(Function.identity(), String::length))
                 .entrySet()

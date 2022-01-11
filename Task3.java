@@ -17,7 +17,7 @@ public class Task3 {
                 } )
                 .collect(Collectors.toList());
     }
-
+////////////////////////////////////////////////
     public static List<String> firstAndLastCharacter (List<String> stringList) {
         return stringList.stream()
                 .map(Task3::returnFirstAndLastChar)

@@ -16,7 +16,7 @@ public class Task8 {
                 .sorted(Comparator.reverseOrder())
                 .collect(Collectors.toList());
     }
-
+/////////////////////////////////////////////////
     public static List<Integer> getSortedUnionTwoSubsetsIntegers(int d, int k, List<Integer> intList) {
         Stream<Integer> integerStream = intList.stream().filter(f -> f > d);
         Stream<Integer> skip = intList.stream().skip(k + 1L);

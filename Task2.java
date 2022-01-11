@@ -13,7 +13,7 @@ public class Task2 {
                 .sorted()
                 .collect(Collectors.toList());
     }
-
+//////////////////////////////////////////
     public static List<Integer> sortedByIndexLength(List<String> stringList) {
         return stringList.stream()
                 .map(String::length)

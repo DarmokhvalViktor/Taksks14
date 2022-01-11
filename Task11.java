@@ -25,7 +25,7 @@ public class Task11 {
                 }).sorted(Comparator.comparing(YearSchoolStat::getNumberOfSchools).thenComparing(YearSchoolStat::getYearOfEntering))
                 .collect(Collectors.toList());
     }
-
+//////////////////////////////////////
     public static List<YearSchoolStat> getYearSchoolStats(List<Entrant> entrantList) {
         return entrantList.stream().collect(Collectors.groupingBy(Entrant::getYearOfEntering))
                 .entrySet()
